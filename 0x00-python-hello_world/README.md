@@ -24,3 +24,12 @@ chinaza@ubuntu:~/py/0x00$ ./1-run_inline
 Best School: 98
 chinaza@ubuntu:~/py/0x00$ 
 <pre>
+
+TASK 2: Hello, print
+Write a Python script that prints a statement has a special character followed by a new line using the function "print"
+
+<pre>
+chinaza@ubuntu:~/py/0x00$ ./2-print.py 
+"Programming is like building a multilingual puzzle
+chinaza@ubuntu:~/py/0x00$
+<pre>
