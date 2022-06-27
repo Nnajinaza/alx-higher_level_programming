@@ -61,3 +61,63 @@ Holberton SchoolHolberton SchoolHolberton School
 Holberton
 chinaza@ubuntu:~/py/0x00$ 
 <pre>
+
+TASK 6:Play with strings
+This code concats two strings together
+
+<pre>
+chinaza@ubuntu:~/py/0x00$ ./6-concat.py
+Welcome to Holberton School!
+chinaza@ubuntu:~/py/0x00$ wc -l 6-concat.py
+5 6-concat.py
+chinaza@ubuntu:~/py/0x00$ 
+<pre>
+
+TASK 7: Copy-Cut-Paste
+This code prints out parts of a string
+
+<pre>
+chinaza@ubuntu:~/py/0x00$ ./7-edges.py
+First 3 letters: Hol
+Last 2 letters: on
+Middle word: olberto
+chinaza@ubuntu:~/py/0x00$ 
+<pre>
+
+TASK 8: Create a new sentence
+This code separates sentences into differents new strings and concats them together to create a new sentence
+
+<pre>
+chinaza@ubuntu:~/py/0x00$ ./8-concat_edges.py
+object-oriented programming with Python
+chinaza@ubuntu:~/py/0x00$ 
+<pre>
+
+TASK 9: Easter Egg
+Write a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
+
+<pre>
+chinaza@ubuntu:~/py/0x00$ ./9-easter_egg.py
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+chinaza@ubuntu:~/py/0x00$
+<pre>
