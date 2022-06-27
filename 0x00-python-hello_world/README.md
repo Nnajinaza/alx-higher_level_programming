@@ -51,3 +51,13 @@ chinaza@ubuntu:~/py/0x00$ ./4-print_float.py
 Float: 3.14
 chinaza@ubuntu:~/py/0x00$ 
 <pre>
+
+TASK 5: Print string
+This code print 3 times a string stored in the variable str, followed by its first 9 characters.print 3 times a string stored in the variable str, followed by its first 9 characters.
+
+<pre>
+chinaza@ubuntu:~/py/0x00$ ./5-print_string.py 
+Holberton SchoolHolberton SchoolHolberton School
+Holberton
+chinaza@ubuntu:~/py/0x00$ 
+<pre>
