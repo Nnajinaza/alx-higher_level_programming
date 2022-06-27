@@ -33,3 +33,12 @@ chinaza@ubuntu:~/py/0x00$ ./2-print.py
 "Programming is like building a multilingual puzzle
 chinaza@ubuntu:~/py/0x00$
 <pre>
+
+TASK 3: Print integer
+This program prints an integer stored in a variable follwed by a string the a new line
+
+<pre>
+chinaza@ubuntu:~/py/0x00$ ./3-print_number.py
+98 Battery street
+chinaza@ubuntu:~/py/0x00$
+<pre>
