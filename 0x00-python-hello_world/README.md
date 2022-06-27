@@ -42,3 +42,12 @@ chinaza@ubuntu:~/py/0x00$ ./3-print_number.py
 98 Battery street
 chinaza@ubuntu:~/py/0x00$
 <pre>
+
+TASK 4: Print float
+This code prints out the float stored in the variable number with a precision of 2 digits
+
+<pre>
+chinaza@ubuntu:~/py/0x00$ ./4-print_float.py
+Float: 3.14
+chinaza@ubuntu:~/py/0x00$ 
+<pre>
