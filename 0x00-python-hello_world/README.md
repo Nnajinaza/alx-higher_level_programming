@@ -60,7 +60,6 @@ chinaza@ubuntu:~/py/0x00$ ./5-print_string.py
 Holberton SchoolHolberton SchoolHolberton School
 Holberton
 chinaza@ubuntu:~/py/0x00$ 
-<pre>
 
 ##TASK 6:Play with strings
 This code concats two strings together
@@ -70,8 +69,7 @@ chinaza@ubuntu:~/py/0x00$ ./6-concat.py
 Welcome to Holberton School!
 chinaza@ubuntu:~/py/0x00$ wc -l 6-concat.py
 5 6-concat.py
-chinaza@ubuntu:~/py/0x00$ 
-<pre>
+chinaza@ubuntu:~/py/0x00$
 
 ##TASK 7: Copy-Cut-Paste
 This code prints out parts of a string
