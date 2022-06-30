@@ -5,7 +5,7 @@ if __name__ == "__main__":
     if ((len(sys.argv) - 1) != 3):
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
-    option = {"+":add, "-":sub, "*":mul, "/":div}
+    option = {"+": add, "-": sub, "*": mul, "/": div}
 
     if sys.argv[2] not in option:
         print("Unknown operator. Available operators: +, -, * and /")
