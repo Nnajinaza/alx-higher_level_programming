@@ -19,9 +19,11 @@ int checkpalindrome(listint_t **first, listint_t *last)
 	if (list == 0)
 		return (0);
 	
-	list = ((*first)->n == last->n);
-	*first = (*first)->next;
-
+	else
+	{
+		list = ((*first)->n == last->n);
+		*first = (*first)->next;
+	}
 	return (list);
 }
 
