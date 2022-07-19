@@ -3,6 +3,7 @@
 
 
 class Square:
+    """Initialize th square class"""
     def __init__(self, size=0):
         """
         Args:
@@ -30,6 +31,7 @@ class Square:
         return (self.__size * self.__size)
 
     def my_print(self):
+        """Function to print result"""
         for i in range(self.__size):
             for j in range(self.__size):
                 print("#", end='')
