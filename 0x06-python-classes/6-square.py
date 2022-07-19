@@ -8,6 +8,7 @@ class Square:
         """
         Args:
             size (int): The value of the size of the square
+            position (tuple): values of position
         """
         self.__size = size
         self.__position = position
@@ -24,8 +25,6 @@ class Square:
             raise TypeError("size must be an integer")
         elif (size < 0):
             raise ValueError("size must be >= 0")
-        else:
-            self.__size = size
 
     @property
     def position(self):
@@ -43,8 +42,6 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         elif value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
-        else:
-            self.__position = position
 
     def area(self):
         """Returns the current square area"""
@@ -59,3 +56,4 @@ class Square:
             print("")
         if (self.__size == 0):
             print("")
+            return
