@@ -23,6 +23,7 @@ class Node:
         """To set the value of size"""
         if not isinstance(value, int):
             raise TypeError("data must be an integer")
+        self.__data = value
 
     @property
     def next_node(self):
@@ -32,9 +33,9 @@ class Node:
     @next_node.setter
     def next_node(self, value):
         """To set values of  position"""
-        if next_node is not None and not isinstance(value, Node):
+        if value is not None and not isinstance(value, Node):
             raise TypeError("next_node must be a Node object")
-        self.__next_node = next_node
+        self.__next_node = value
 
 
 class SinglyLinkedList:
