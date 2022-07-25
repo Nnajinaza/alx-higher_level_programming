@@ -6,8 +6,8 @@
 
 class Rectangle:
     '''the initialization of the class'''
-    width = True
     height = True
+    width = True
 
     def __init__(self, width=0, height=0):
         """
@@ -15,8 +15,14 @@ class Rectangle:
             width (int): the width of the rectangle
             height (int): the height of the rectangle
         """
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
+
+    def __str__(self):
+        if self.height == 0 or self.width == 0:
+            return ""
+        else:
+            return '\n'.join('#' * self.width for _ in range(self.height))
 
     @property
     def width(self):
