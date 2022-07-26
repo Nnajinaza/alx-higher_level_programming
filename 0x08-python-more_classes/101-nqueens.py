@@ -26,10 +26,10 @@ def place(N, row, col, result):
 def isvalid(row, col, result):
     """check if the position is valid
     """
-    diag1 = [line[0]+l[1] for line in result]
-    diag2 = [line[1]-l[0] for line in result]
-    cols = [line[1] for line in result]
-    rows = [line[0] for line in result]
+    diag1 = [l[0]+l[1] for l in result]
+    diag2 = [l[1]-l[0] for l in result]
+    cols = [l[1] for l in result]
+    rows = [l[0] for l in result]
     if row in rows or col in cols or row+col in diag1 or col-row in diag2:
         return False
     return True
