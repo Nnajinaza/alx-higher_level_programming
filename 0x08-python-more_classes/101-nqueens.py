@@ -30,7 +30,6 @@ def isvalid(row, col, result):
     diag2 = [line[1]-l[0] for line in result]
     cols = [line[1] for line in result]
     rows = [line[0] for line in result]
-
     if row in rows or col in cols or row+col in diag1 or col-row in diag2:
         return False
     return True
