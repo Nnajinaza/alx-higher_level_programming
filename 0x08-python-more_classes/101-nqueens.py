@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 """ The N queens puzzle
 """
+
+
 from sys import argv, exit
 
 
 def place(N, row, col, result):
-    """ place queens recursively 
+    """ place queens recursively
     """
     while col < N:
         if isvalid(row, col, result):
@@ -20,16 +22,19 @@ def place(N, row, col, result):
         result.pop()
     return
 
+
 def isvalid(row, col, result):
-    """ check if the position is valid 
+    """check if the position is valid
     """
-    diag1 = [l[0]+l[1] for l in result]
-    diag2 = [l[1]-l[0] for l in result]
-    cols = [l[1] for l in result]
-    rows = [l[0] for l in result]
+    diag1 = [line[0]+l[1] for line in result]
+    diag2 = [line[1]-l[0] for line in result]
+    cols = [line[1] for line in result]
+    rows = [line[0] for line in result]
+
     if row in rows or col in cols or row+col in diag1 or col-row in diag2:
         return False
     return True
+
 
 if __name__ == "__main__":
     length = len(argv)
