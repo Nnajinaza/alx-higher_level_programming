@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """
 This module multiply 2 matricies using numpy module
