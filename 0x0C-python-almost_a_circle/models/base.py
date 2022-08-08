@@ -1,5 +1,10 @@
 #!/usr/bin/python3
-"""Defining a class Base"""
+"""Defining a class Baseimport json
+"""
+
+
+import json
+
 
 
 class Base:
