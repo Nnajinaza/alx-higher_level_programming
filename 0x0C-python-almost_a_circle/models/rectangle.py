@@ -71,9 +71,11 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
+        """to return the area"""
         return (self.__width * self.__height)
 
     def display(self):
+        """to display the class"""
         for y in range(self.__y):
             print()
         for i in range(self.__height):
@@ -84,10 +86,12 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
+        """str representation"""
         return ("[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format
                 (self.id, self.x, self.y, self.width, self.height))
 
     def update(self, *args, **kwargs):
+        """to update"""
         if args is not None and len(args) != 0:
             attr_assigned = ['id', 'width', 'height', 'x', 'y']
         for i in range(len(args)):
@@ -97,6 +101,7 @@ class Rectangle(Base):
                 setattr(self, key, value)
 
     def to_dictionary(self):
+        """to set the dictionary"""
         new_dict = {}
         new_dict["id"] = self.id
         new_dict["width"] = self.width
