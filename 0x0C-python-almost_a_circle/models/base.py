@@ -2,6 +2,7 @@
 """Defining a class Baseimport json"""
 import json
 import csv
+import os.path
 
 
 class Base:
@@ -57,11 +58,19 @@ class Base:
     @classmethod
     def load_form_file(cls):
         filename = cls.__name__ + ".json"
-        new_ls = []
+
+        if os.path.exists(filename) is false:
+            return []
+
         with open(filename, 'r') as f:
-            new_ls = cls.from_json_string(f.read())
-        for i, j in enumerate(new_ls):
-            new_ls[i] = cls.create(**new_ls[i])
+            list_string = f.read()
+
+        new_ls = []
+        new_lst = cls.from_json_string(list_string)
+
+        for i in range(len(new_lst)):
+            new_ls.append(cls.create(**new_lst[i]))
+
         return new_ls
 
     @classmethod
@@ -80,21 +89,32 @@ class Base:
 
     @classmethod
     def load_from_file_csv(cls):
-        """deserializes a list of Rectangles/Squares in csv"""
-        filename = cls.__name__ + ".csv"
-        lists = []
-        with open(filename, 'r') as csvfile:
-            csv_reader = csv.reader(csvfile)
-            for args in csv_reader:
-                if cls.__name__ == "Rectangle":
-                    dictionary = {"id": int(args[0]),
-                                  "width": int(args[1]),
-                                  "height": int(args[2]),
-                                  "x": int(args[3]),
-                                  "y": int(args[4])}
-                elif cls.__name__ == "Square":
-                    dictionary = {"id": int(args[0]), "size": int(args[1]),
-                                  "x": int(args[2]), "y": int(args[3])}
-                    obj = cls.create(**dictionary)
-                    lists.append(obj)
-        return lists
+        """deserializes a list of Rectangles/Squares"""
+        filename = "{}.csv".format(cls.__name__)
+
+        if os.path.exists(filename) is False:
+            return []
+
+        with open(filename, 'r') as readFile:
+            reader = csv.reader(readFile)
+            csv_list = list(reader)
+
+        if cls.__name__ == "Rectangle":
+            list_keys = ['id', 'width', 'height', 'x', 'y']
+        else:
+            list_keys = ['id', 'size', 'x', 'y']
+
+        matrix = []
+
+        for csv_elem in csv_list:
+            dict_csv = {}
+            for kv in enumerate(csv_elem):
+                dict_csv[list_keys[kv[0]]] = int(kv[1])
+            matrix.append(dict_csv)
+
+        list_ins = []
+
+        for index in range(len(matrix)):
+            list_ins.append(cls.create(**matrix[index]))
+
+        return list_ins
