@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-'''Lists all the cities in the database by their respective states.
-'''
+"""Lists all the cities in the database by their respective states.
+"""
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State

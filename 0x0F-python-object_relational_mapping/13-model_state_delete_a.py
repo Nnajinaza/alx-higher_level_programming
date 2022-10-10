@@ -16,7 +16,8 @@ if __name__ == '__main__':
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    none_a = session.query(State).filter(State.name.like("%a%"))
-    .delete(synchronize_session='fetch')
+    none_a = session.query(State).filter(State.name.like("%a%"))\
+                                        .delete(synchronize_session=\
+                                                'fetch')
 
     session.commit()
